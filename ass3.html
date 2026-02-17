@@ -8,30 +8,62 @@
 </head>
 <body>
 
-    <div class="name">
-        Nikhil Behera
+    <div id="auth-view" class="main" style="margin-top: 10vh;">
+        <div class="about" style="border-color: white;"> <h2 id="formTitle">Login</h2>
+            
+            <form id="authForm">
+                <div class="input-group">
+                    <label for="username">Username</label>
+                    <input type="text" id="username" placeholder="Username">
+                    <small id="userError" class="error-msg"></small>
+                </div>
+                
+                <div class="input-group">
+                    <label for="password">Password</label>
+                    <input type="password" id="password" placeholder="Password">
+                    <small id="passError" class="error-msg"></small>
+                </div>
+                
+                <button type="submit" id="submitBtn" class="btn">Login</button>
+                
+                <p id="toggleText" style="margin-top:20px; font-size: 1rem;">
+                    Don't have an account? <span id="toggleLink" class="toggle-link">Sign Up</span>
+                </p>
+            </form>
+        </div>
     </div>
 
-    <div class="main">
-        <div class="about">
-            About
-            <div id="AboutPara">
-                This is my portfolio website created through HTML and CSS. 
-                It is static for now, being built as part of my FSDL Lab 
-                at MIT World Peace University.
+
+    <div id="portfolio-view" style="display: none;">
+        
+        <button id="logoutBtn" class="btn logout-btn">Logout</button>
+
+        <div class="name">
+            Nikhil Behera
+        </div>
+
+        <div class="main">
+            <div class="about">
+                About
+                <div id="AboutPara">
+                    This is my portfolio website created through HTML and CSS. 
+                    It is static for now, being built as part of my FSDL Lab 
+                    at MIT World Peace University.
+                </div>
+            </div>
+
+            <div class="skills">
+                Skills that I possess:
+                <p>HTML, CSS, Git, GitHub, Python, react, node.js, etc.</p>
+            </div>
+
+            <div class="projects">
+                Projects
+                <p>Portfolio Website, Pune Metro, Stock Market Analysis, Cafe Finder</p>
             </div>
         </div>
-
-        <div class="skills">
-            Skills that I possess:
-            <p>HTML, CSS, Git, GitHub, Python, react,node.js ,etc.</p>
-        </div>
-
-        <div class="projects">
-            Projects
-            <p>Portfolio Website, Pune Metro, Stock Market Analysis , Cafe Finder</p>
-        </div>
     </div>
 
+    <script src="main.js"></script>
 </body>
 </html>
